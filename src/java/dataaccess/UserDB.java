@@ -80,7 +80,7 @@ public class UserDB {
         }
     }
 
-    public void deleteUser(User user) throws Exception {
+    public void deleteUser(String email) throws Exception {
         ConnectionPool cp = ConnectionPool.getInstance();
         Connection con = cp.getConnection();
         PreparedStatement ps = null;
@@ -88,7 +88,7 @@ public class UserDB {
 
         try {
             ps = con.prepareStatement(sql);
-            ps.setString(1, user.getEmail());
+            ps.setString(1, email);
             ps.executeUpdate();
         } finally {
             DBUtil.closePreparedStatement(ps);

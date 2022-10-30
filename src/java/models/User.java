@@ -3,11 +3,11 @@ package models;
 import java.io.Serializable;
 
 public class User implements Serializable {
-    String email;
-    String firstName;
-    String lastName;
-    String password;
-    Role role;
+    private String email;
+    private String firstName;
+    private String lastName;
+    private String password;
+    private Role role;
     
     public User() {
     }

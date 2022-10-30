@@ -1,8 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package dataaccess;
 
 import java.sql.Connection;
@@ -12,10 +7,6 @@ import java.util.ArrayList;
 import java.util.List;
 import models.Role;
 
-/**
- *
- * @author godim
- */
 public class RoleDB {
     
     public Role getRole(int roleId) throws Exception {
